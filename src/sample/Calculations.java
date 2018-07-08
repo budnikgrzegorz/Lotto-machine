@@ -33,5 +33,5 @@ public class Calculations {
     public void eurojackpotLotto() {
     }
 
-
+    int a;
 }

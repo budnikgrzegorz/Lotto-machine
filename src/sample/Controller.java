@@ -9,6 +9,7 @@ import java.util.Random;
 
 public class Controller {
 
+
     @FXML
     Button big;
 
@@ -25,13 +26,13 @@ public class Controller {
     Button multi;
 
     @FXML
-    Button mText;
+    Button textMulti;
 
     @FXML
     Button eurojackpot;
 
     @FXML
-    Button euroText;
+    Button textEuro;
 
     public void initialize() {
 
@@ -45,5 +46,5 @@ public class Controller {
 
     }
 
-
+    int a;
 }

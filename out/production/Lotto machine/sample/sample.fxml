@@ -25,7 +25,7 @@
         <HBox prefHeight="100.0" prefWidth="300.0">
           <children>
             <Button fx:id="multi" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="Multi LOTEK" />
-            <TextField  prefHeight="100.0" prefWidth="367.0" />
+            <TextField   prefHeight="100.0" prefWidth="367.0" />
           </children>
         </HBox>
         <HBox prefHeight="100.0" prefWidth="300.0">
