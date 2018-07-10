@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="158.0" prefWidth="307.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <VBox layoutX="0.0" layoutY="0.0" prefHeight="158.0" prefWidth="307.0">
+      <children>
+        <Label prefWidth="307.0" text="Ile liczb chcesz typować?" />
+        <CheckBox alignment="TOP_LEFT" allowIndeterminate="false" contentDisplay="TOP" mnemonicParsing="false" text="1" textAlignment="LEFT" underline="false" wrapText="false" />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

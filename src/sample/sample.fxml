@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="715.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
   <children>
-    <VBox layoutX="0.0" layoutY="0.0" prefHeight="441.0" prefWidth="684.0">
+    <VBox prefHeight="406.0" prefWidth="601.0" styleClass="vboxbasic" AnchorPane.bottomAnchor="39.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="39.0">
       <children>
         <HBox prefHeight="100.0" prefWidth="684.0">
           <children>
@@ -23,7 +23,7 @@
                 </ImageView>
               </graphic>
               <stylesheets>
-                <URL value="@../style/style.css" />
+                <URL value="@../style/styleRoot.css" />
               </stylesheets>
             </Button>
             <TextField fx:id="bigText" prefHeight="100.0" prefWidth="367.0" styleClass="text" />
@@ -73,11 +73,11 @@
         </HBox>
       </children>
       <stylesheets>
-        <URL value="@../style/style.css" />
+        <URL value="@../style/styleRoot.css" />
       </stylesheets>
     </VBox>
   </children>
   <stylesheets>
-    <URL value="@../style/style.css" />
+    <URL value="@../style/styleRoot.css" />
   </stylesheets>
 </AnchorPane>

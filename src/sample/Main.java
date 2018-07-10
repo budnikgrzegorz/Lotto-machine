@@ -14,7 +14,7 @@ public class Main extends Application {
         primaryStage.setTitle("POLISH LOTTO MACHINE");
         Scene scene = new Scene(root, 680, 450);
         primaryStage.setScene(scene);
-        scene.getStylesheets().add("style/style.css");
+        scene.getStylesheets().add("style/styleRoot.css");
         primaryStage.show();
 
     }
