@@ -1,40 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
+<?import java.net.*?>
 <?import java.util.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<AnchorPane fx:controller="sample.Controller" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="715.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
   <children>
-    <VBox layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+    <VBox layoutX="0.0" layoutY="0.0" prefHeight="441.0" prefWidth="684.0">
       <children>
-        <HBox prefHeight="100.0" prefWidth="300.0">
+        <HBox prefHeight="100.0" prefWidth="684.0">
           <children>
-            <Button fx:id="big" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="Duży LOTEK" />
-            <TextField fx:id="bigText" prefHeight="100.0" prefWidth="367.0" />
+            <Button fx:id="big" mnemonicParsing="false" prefHeight="110.0" prefWidth="233.0" styleClass="shiny" text="">
+              <graphic>
+                <ImageView fitHeight="87.27057006018748" fitWidth="84.31725311279297" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../image/duzyLotek.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+              <stylesheets>
+                <URL value="@../style/style.css" />
+              </stylesheets>
+            </Button>
+            <TextField fx:id="bigText" prefHeight="100.0" prefWidth="367.0" styleClass="text" />
           </children>
         </HBox>
         <HBox prefHeight="100.0" prefWidth="300.0">
           <children>
-            <Button fx:id="mini" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="Mini LOTEK" />
-            <TextField fx:id="miniText" prefHeight="100.0" prefWidth="367.0" />
+            <Button fx:id="mini" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="">
+              <graphic>
+                <ImageView fitHeight="84.3172607421875" fitWidth="84.3172607421875" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../image/minilotto.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <TextField fx:id="miniText" prefHeight="100.0" prefWidth="367.0" styleClass="text" />
           </children>
         </HBox>
         <HBox prefHeight="100.0" prefWidth="300.0">
           <children>
-            <Button fx:id="multi" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="Multi LOTEK" />
-            <TextField   prefHeight="100.0" prefWidth="367.0" />
+            <Button fx:id="multi" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="">
+              <graphic>
+                <ImageView fitHeight="92.42823666792897" fitWidth="118.31722259521484" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../image/multi_multi.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <TextField prefHeight="100.0" prefWidth="367.0" styleClass="text" />
           </children>
         </HBox>
         <HBox prefHeight="100.0" prefWidth="300.0">
           <children>
-            <Button fx:id="eurojackpot" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="Eurojackpot" />
-            <TextField  prefHeight="100.0" prefWidth="367.0" />
+            <Button fx:id="eurojackpot" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="">
+              <graphic>
+                <ImageView fitHeight="67.32520294189453" fitWidth="167.63157882239298" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../image/eurojackpot.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <TextField prefHeight="100.0" prefWidth="367.0" styleClass="text" />
           </children>
         </HBox>
       </children>
+      <stylesheets>
+        <URL value="@../style/style.css" />
+      </stylesheets>
     </VBox>
   </children>
+  <stylesheets>
+    <URL value="@../style/style.css" />
+  </stylesheets>
 </AnchorPane>

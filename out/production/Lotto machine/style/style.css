@@ -1,0 +1,20 @@
+.root {
+-fx-background-color: #cccccc;
+}
+.background {
+ -fx-background-image: url('../image/duzyLotek.jpg');
+}
+.button {
+  -fx-background-color: linear-gradient(#ff5400, #be1d00);
+      -fx-background-radius: 30;
+      -fx-background-insets: 0;
+      -fx-text-fill: white;
+}
+.text {
+  -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
