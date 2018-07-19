@@ -3,18 +3,20 @@
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="715.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0000999999975" prefWidth="701.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
   <children>
-    <VBox prefHeight="406.0" prefWidth="601.0" styleClass="vboxbasic" AnchorPane.bottomAnchor="39.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="39.0">
+    <VBox prefHeight="525.0000999999975" prefWidth="701.0" styleClass="vboxbasic" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
       <children>
-        <HBox prefHeight="100.0" prefWidth="684.0">
+        <HBox prefHeight="127.0" prefWidth="671.0" styleClass="vbox1">
           <children>
-            <Button fx:id="big" mnemonicParsing="false" prefHeight="110.0" prefWidth="233.0" styleClass="shiny" text="">
+            <Button fx:id="big" minHeight="88.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="233.0" styleClass="shiny" text="">
               <graphic>
                 <ImageView fitHeight="87.27057006018748" fitWidth="84.31725311279297" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -25,13 +27,22 @@
               <stylesheets>
                 <URL value="@../style/styleRoot.css" />
               </stylesheets>
+              <HBox.margin>
+                <Insets bottom="5.0" left="30.0" right="5.0" top="10.0" fx:id="x1" />
+              </HBox.margin>
             </Button>
-            <TextField fx:id="bigText" prefHeight="100.0" prefWidth="367.0" styleClass="text" />
+            <TextField fx:id="bigText" prefHeight="88.0" prefWidth="367.0" styleClass="text" HBox.margin="$x1" />
           </children>
+          <stylesheets>
+            <URL value="@../style/styleRoot.css" />
+          </stylesheets>
+          <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x2" />
+          </VBox.margin>
         </HBox>
-        <HBox prefHeight="100.0" prefWidth="300.0">
+        <HBox prefHeight="127.0" prefWidth="671.0" styleClass="vbox2" VBox.margin="$x2">
           <children>
-            <Button fx:id="mini" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="">
+            <Button fx:id="mini" minHeight="85.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="233.0" text="" HBox.margin="$x1">
               <graphic>
                 <ImageView fitHeight="84.3172607421875" fitWidth="84.3172607421875" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -40,26 +51,54 @@
                 </ImageView>
               </graphic>
             </Button>
-            <TextField fx:id="miniText" prefHeight="100.0" prefWidth="367.0" styleClass="text" />
+            <TextField fx:id="miniText" prefHeight="85.0" prefWidth="367.0" styleClass="text" HBox.margin="$x1" />
           </children>
+          <stylesheets>
+            <URL value="@../style/styleRoot.css" />
+          </stylesheets>
         </HBox>
-        <HBox prefHeight="100.0" prefWidth="300.0">
+        <HBox prefHeight="133.0" prefWidth="661.0" styleClass="vbox1" VBox.margin="$x2">
           <children>
-            <Button fx:id="multi" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="">
-              <graphic>
-                <ImageView fitHeight="92.42823666792897" fitWidth="118.31722259521484" pickOnBounds="true" preserveRatio="true">
-                  <image>
-                    <Image url="@../image/multi_multi.png" />
-                  </image>
-                </ImageView>
-              </graphic>
-            </Button>
-            <TextField prefHeight="100.0" prefWidth="367.0" styleClass="text" />
+            <VBox prefHeight="119.0" prefWidth="238.0" HBox.margin="$x1">
+              <children>
+                <Button fx:id="multi" minHeight="84.3172607421875" mnemonicParsing="false" prefHeight="84.3172607421875" prefWidth="233.0" text="">
+                  <graphic>
+                    <ImageView fitHeight="92.42823666792897" fitWidth="118.31722259521484" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@../image/multi_multi.png" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                  <VBox.margin>
+                    <Insets />
+                  </VBox.margin>
+                </Button>
+                <ChoiceBox fx:id="choiceBox" prefHeight="24.0" prefWidth="229.0" styleClass="button">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                  <stylesheets>
+                    <URL value="@../style/styleRoot.css" />
+                  </stylesheets>
+                  <VBox.margin>
+                    <Insets top="7.0" />
+                  </VBox.margin>
+                </ChoiceBox>
+              </children>
+            </VBox>
+            <TextField prefHeight="115.0" prefWidth="360.0" styleClass="text" HBox.margin="$x1" />
           </children>
+          <stylesheets>
+            <URL value="@../style/styleRoot.css" />
+          </stylesheets>
         </HBox>
-        <HBox prefHeight="100.0" prefWidth="300.0">
+        <HBox prefHeight="127.0" prefWidth="671.0" styleClass="vbox2" VBox.margin="$x2">
           <children>
-            <Button fx:id="eurojackpot" mnemonicParsing="false" prefHeight="100.0" prefWidth="233.0" text="">
+            <Button fx:id="eurojackpot" mnemonicParsing="false" prefHeight="88.0" prefWidth="233.0" text="" HBox.margin="$x1">
               <graphic>
                 <ImageView fitHeight="67.32520294189453" fitWidth="167.63157882239298" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -68,8 +107,11 @@
                 </ImageView>
               </graphic>
             </Button>
-            <TextField prefHeight="100.0" prefWidth="367.0" styleClass="text" />
+            <TextField prefHeight="87.27056884765625" prefWidth="367.0" styleClass="text" HBox.margin="$x1" />
           </children>
+          <stylesheets>
+            <URL value="@../style/styleRoot.css" />
+          </stylesheets>
         </HBox>
       </children>
       <stylesheets>
@@ -77,6 +119,9 @@
       </stylesheets>
     </VBox>
   </children>
+  <padding>
+    <Insets top="2.0" />
+  </padding>
   <stylesheets>
     <URL value="@../style/styleRoot.css" />
   </stylesheets>

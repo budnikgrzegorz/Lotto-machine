@@ -1,18 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
+<?import java.net.*?>
 <?import java.util.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="158.0" prefWidth="307.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="108.00009999999747" prefWidth="597.0" styleClass="background2" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <children>
-    <VBox layoutX="0.0" layoutY="0.0" prefHeight="158.0" prefWidth="307.0">
+    <VBox layoutY="0.0" prefHeight="158.0" prefWidth="597.0" AnchorPane.rightAnchor="0.0">
       <children>
-        <Label prefWidth="307.0" text="Ile liczb chcesz typować?" />
-        <CheckBox alignment="TOP_LEFT" allowIndeterminate="false" contentDisplay="TOP" mnemonicParsing="false" text="1" textAlignment="LEFT" underline="false" wrapText="false" />
+        <Label alignment="CENTER" contentDisplay="CENTER" disable="true" focusTraversable="true" graphicTextGap="10.0" prefHeight="34.0" prefWidth="510.0" text="Ile liczb chcesz typować?" textAlignment="CENTER" textOverrun="CLIP">
+          <font>
+            <Font name="System Bold" size="25.0" />
+          </font>
+          <stylesheets>
+            <URL value="@../style/styleRoot.css" />
+          </stylesheets>
+        </Label>
+        <HBox prefHeight="40.0" prefWidth="494.0">
+          <children>
+            <CheckBox mnemonicParsing="false" styleClass="button" text="1" HBox.hgrow="ALWAYS">
+              <stylesheets>
+                <URL value="@../style/styleRoot.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+              </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" styleClass="button" text="2" HBox.hgrow="ALWAYS">
+              <stylesheets>
+                <URL value="@../style/styleRoot.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+              </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" styleClass="button" text="3" HBox.hgrow="ALWAYS">
+              <stylesheets>
+                <URL value="@../style/styleRoot.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+              </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" styleClass="button" text="4" HBox.hgrow="ALWAYS">
+              <stylesheets>
+                <URL value="@../style/styleRoot.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+              </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" styleClass="button" text="5" HBox.hgrow="ALWAYS">
+              <stylesheets>
+                <URL value="@../style/styleRoot.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+              </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" styleClass="button" text="6" HBox.hgrow="ALWAYS">
+              <stylesheets>
+                <URL value="@../style/styleRoot.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+              </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" styleClass="button" text="7" HBox.hgrow="ALWAYS">
+              <stylesheets>
+                <URL value="@../style/styleRoot.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+              </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" styleClass="button" text="8" HBox.hgrow="ALWAYS">
+              <stylesheets>
+                <URL value="@../style/styleRoot.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+              </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" styleClass="button" text="9" HBox.hgrow="ALWAYS">
+              <stylesheets>
+                <URL value="@../style/styleRoot.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+              </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" styleClass="button" text="10" HBox.hgrow="ALWAYS">
+              <stylesheets>
+                <URL value="@../style/styleRoot.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+              </HBox.margin>
+            </CheckBox>
+          </children>
+        </HBox>
       </children>
     </VBox>
   </children>
+  <stylesheets>
+    <URL value="@../style/styleRoot.css" />
+  </stylesheets>
 </AnchorPane>

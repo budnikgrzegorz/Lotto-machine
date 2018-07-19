@@ -2,7 +2,7 @@
 -fx-background-color: #cccccc;
 }
 .background {
- -fx-background-image: url('../image/duzyLotek.jpg');
+ -fx-background-color: #c3ef52;
 }
 .button {
   -fx-background-color: linear-gradient(#ff5400, #be1d00);
@@ -21,4 +21,16 @@
 .vboxbasic {
   -fx-alignment: center ;
     -fx-padding: 10 ;
+}
+.background2 {
+ -fx-background-image: url('../image/multi_multi.png');
+  -fx-background-repeat:no-repeat;
+ -fx-background-size:cover;
+}
+
+.vbox1 {
+ -fx-background-color: #ef7952;
+}
+.vbox2 {
+ -fx-background-color: #efe252;
 }
