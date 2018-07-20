@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class Calculations {
 
-    public static int flag = 0;
+
 
 //    public static void selectCheckBox(boolean a){
 //        Controller controller = new Controller();
@@ -46,7 +46,7 @@ public class Calculations {
     }
 
 
-    public static LinkedList multiLotto(int flag) {
+    public static String multiLotto(int flag) {
 
         //        Creating a list of numbers
         LinkedList linkedList = new LinkedList();
@@ -58,7 +58,7 @@ public class Calculations {
             //            Sorting from the smallest value to the larges
             Collections.sort(linkedList);
         }
-        return linkedList;
+        return linkedList.toString();
     }
 
     public void eurojackpotLotto() {

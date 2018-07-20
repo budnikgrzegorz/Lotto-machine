@@ -30,17 +30,17 @@ public class Controller {
     Button multi;
 
     @FXML
-    Button textMulti;
+    TextField textMulti;
 
     @FXML
     Button eurojackpot;
 
     @FXML
-    Button textEuro;
+    TextField textEuro;
 
     @FXML
     ChoiceBox choiceBox;
-int flag = 0;
+    int flag = 0;
 
     public void initialize() {
         big.setOnAction(event -> {
@@ -52,16 +52,20 @@ int flag = 0;
         });
 
         multi.setOnAction(event -> {
-            textMulti.setText(String.valueOf(Calculations.multiLotto(flag)));
+            textMulti.setText(Calculations.multiLotto(flag));
         });
 
         choiceBox.setItems(FXCollections.observableArrayList("1", "2", "3", "4", "5", "6", "7", "8", "9", "10"));
+
         choiceBox.setTooltip(new Tooltip("Wybierz ile liczb chcesz obstawić"));
         int[] value = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
         choiceBox.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
+
             @Override
             public void changed(ObservableValue observable, Number oldValue, Number newValue) {
-                flag = value[newValue.intValue()];
+
+                        flag = value[newValue.intValue()];
             }
         });
 
