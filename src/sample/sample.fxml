@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0000999999975" prefWidth="701.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0000999999975" prefWidth="701.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
   <children>
-    <VBox prefHeight="525.0000999999975" prefWidth="701.0" styleClass="vboxbasic" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+    <VBox minHeight="567.0000999999975" prefHeight="567.0000999999975" prefWidth="691.0" styleClass="vboxbasic" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="7.0">
       <children>
         <HBox prefHeight="127.0" prefWidth="671.0" styleClass="vbox1">
           <children>
@@ -98,7 +98,7 @@
         </HBox>
         <HBox prefHeight="127.0" prefWidth="671.0" styleClass="vbox2" VBox.margin="$x2">
           <children>
-            <Button fx:id="eurojackpot" mnemonicParsing="false" prefHeight="88.0" prefWidth="233.0" text="" HBox.margin="$x1">
+            <Button fx:id="eurojackpot" mnemonicParsing="false" prefHeight="88.0" prefWidth="233.0" text="">
               <graphic>
                 <ImageView fitHeight="67.32520294189453" fitWidth="167.63157882239298" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -106,12 +106,42 @@
                   </image>
                 </ImageView>
               </graphic>
+              <HBox.margin>
+                <Insets bottom="5.0" left="30.0" right="5.0" top="10.0" fx:id="x1" />
+              </HBox.margin>
             </Button>
-            <TextField prefHeight="87.27056884765625" prefWidth="367.0" styleClass="text" HBox.margin="$x1" />
+            <TextField fx:id="textEuro" prefHeight="87.27056884765625" prefWidth="367.0" styleClass="text">
+              <HBox.margin>
+                <Insets bottom="5.0" left="30.0" right="5.0" top="10.0" fx:id="x1" />
+              </HBox.margin>
+            </TextField>
           </children>
           <stylesheets>
             <URL value="@../style/styleRoot.css" />
           </stylesheets>
+        </HBox>
+        <HBox prefHeight="127.0" prefWidth="671.0" styleClass="vbox1">
+          <children>
+            <Button id="eurojackpot" fx:id="pensja" mnemonicParsing="false" prefHeight="88.0" prefWidth="233.0" text="">
+              <graphic>
+                <ImageView fitHeight="67.32520294189453" fitWidth="167.63157882239298" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../image/ekstrapensja.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+              <HBox.margin>
+                <Insets bottom="5.0" left="30.0" right="5.0" top="10.0" fx:id="x1" />
+              </HBox.margin>
+            </Button>
+            <TextField id="textEuro" fx:id="textpensja" prefHeight="87.27056884765625" prefWidth="367.0" styleClass="text" HBox.margin="$x1" />
+          </children>
+          <stylesheets>
+            <URL value="@../style/styleRoot.css" />
+          </stylesheets>
+          <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x2" />
+          </VBox.margin>
         </HBox>
       </children>
       <stylesheets>
