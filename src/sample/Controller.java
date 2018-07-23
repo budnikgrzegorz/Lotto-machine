@@ -52,21 +52,21 @@ public class Controller {
 
     public void initialize() {
         big.setOnAction(event -> {
-            bigText.setText(String.valueOf(Calculations.bigLotto()));
+            bigText.setText(Calculations.Calcul(6,49,0,0));
         });
 
         mini.setOnAction(event -> {
-            miniText.setText(String.valueOf(Calculations.miniLotto()));
+            miniText.setText(Calculations.Calcul(5,42,0,0));
         });
 
         multi.setOnAction(event -> {
-            textMulti.setText(Calculations.multiLotto(flag));
+            textMulti.setText(Calculations.Calcul(flag,80,0,0));
         });
         eurojackpot.setOnAction(event -> {
-            textEuro.setText(Calculations.eurojackpotLotto());
+            textEuro.setText(Calculations.Calcul(5,50,2,10));
         });
         pensja.setOnAction(event -> {
-            textpensja.setText(Calculations.ekstraPensja());
+            textpensja.setText(Calculations.Calcul(5,35,1,4));
         });
 
         choiceBox.setItems(FXCollections.observableArrayList("1", "2", "3", "4", "5", "6", "7", "8", "9", "10"));
